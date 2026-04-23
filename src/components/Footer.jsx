@@ -82,7 +82,7 @@ export default function Footer() {
               </div>
             </div>
 
-            <div className="grid grid-cols-2 gap-8 md:col-span-7 md:grid-cols-3 md:gap-12">
+            <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 md:col-span-7 md:grid-cols-3 md:gap-12">
               {COLUMNS.map((col) => (
                 <div key={col.title}>
                   <h4 className="text-xs uppercase tracking-[0.25em] text-bone-300">
@@ -118,9 +118,9 @@ export default function Footer() {
           </motion.div>
         </div>
 
-        <div className="flex flex-col items-start justify-between gap-4 border-t border-bone-300/10 py-6 text-xs uppercase tracking-[0.25em] text-bone-300 md:flex-row md:items-center">
-          <span>© {new Date().getFullYear()} Atelier/09 · All rights reserved</span>
-          <div className="flex items-center gap-6">
+        <div className="flex flex-col items-start justify-between gap-4 border-t border-bone-300/10 py-6 text-[11px] uppercase tracking-[0.16em] text-bone-300 sm:text-xs sm:tracking-[0.22em] md:flex-row md:items-center md:tracking-[0.25em]">
+          <span className="max-w-xs sm:max-w-none">© {new Date().getFullYear()} Atelier/09 · All rights reserved</span>
+          <div className="flex flex-wrap items-center gap-x-6 gap-y-3">
             <div className="flex items-center gap-2 normal-case tracking-normal">
               <span>Built by</span>
               <a href="https://www.tronzlabs.com" target="_blank" rel="noreferrer" className="font-medium">

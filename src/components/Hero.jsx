@@ -42,7 +42,7 @@ function HeroTitle() {
                 initial={{ opacity: 0, scale: 0.6 }}
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ delay: 1.1, duration: 0.6 }}
-                className="ml-3 inline-block align-middle rounded-full bg-accent-lime px-4 py-2 font-sans text-xs font-medium tracking-[0.2em] uppercase text-ink-950 md:ml-6 md:text-sm"
+                className="mt-2 ml-0 block w-fit rounded-full bg-accent-lime px-4 py-2 font-sans text-xs font-medium tracking-[0.2em] uppercase text-ink-950 md:mt-0 md:ml-6 md:inline-block md:align-middle md:text-sm"
               >
                 Est. 2011
               </motion.span>
@@ -93,7 +93,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.1, duration: 0.7 }}
-          className="flex items-center gap-3 text-xs font-medium uppercase tracking-[0.3em] text-bone-200"
+          className="flex flex-wrap items-center gap-x-3 gap-y-2 text-[11px] leading-relaxed font-medium uppercase tracking-[0.22em] text-bone-200 md:text-xs md:tracking-[0.3em]"
         >
           <span className="h-1.5 w-1.5 rounded-full bg-accent-lime" />
           Apparel manufacturing · Since 2011 · Tiruppur · Global

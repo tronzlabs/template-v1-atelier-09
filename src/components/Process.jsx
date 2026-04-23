@@ -12,7 +12,7 @@ function Step({ step, i }) {
     offset: ["start 85%", "end 40%"],
   });
   const opacity = useTransform(scrollYProgress, [0, 0.5, 1], [0.25, 1, 1]);
-  const x = useTransform(scrollYProgress, [0, 0.5], [40, 0]);
+  const x = useTransform(scrollYProgress, [0, 0.5], [18, 0]);
 
   return (
     <motion.div
@@ -42,7 +42,7 @@ function Step({ step, i }) {
 
 export default function Process() {
   return (
-    <section id="process" className="relative bg-ink-950 py-24 md:py-36">
+    <section id="process" className="relative overflow-x-clip bg-ink-950 py-24 md:py-36">
       <Container>
         <div className="flex flex-col gap-6 md:flex-row md:items-end md:justify-between md:gap-12">
           <div className="max-w-2xl">
@@ -62,7 +62,7 @@ export default function Process() {
           </Reveal>
         </div>
 
-        <div className="mt-12 md:mt-20">
+        <div className="mt-12 overflow-x-clip md:mt-20">
           {PROCESS_STEPS.map((step, i) => (
             <Step key={step.step} step={step} i={i} />
           ))}

@@ -22,7 +22,7 @@ export default function CTA() {
             <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom_left,rgba(214,255,61,0.2),transparent_55%)]" />
           </div>
 
-          <div className="grid grid-cols-1 gap-12 p-8 md:grid-cols-12 md:gap-16 md:p-16 lg:p-24">
+          <div className="grid grid-cols-1 gap-10 p-5 sm:p-8 md:grid-cols-12 md:gap-16 md:p-16 lg:p-24">
             <div className="md:col-span-7">
               <motion.span
                 initial={{ opacity: 0 }}
@@ -36,7 +36,7 @@ export default function CTA() {
               </motion.span>
 
               <Reveal delay={0.1}>
-                <h2 className="mt-6 font-display text-5xl leading-[0.95] tracking-tight text-bone-50 md:text-7xl">
+                <h2 className="mt-6 font-display text-4xl leading-[0.95] tracking-tight text-bone-50 sm:text-5xl md:text-7xl">
                   Launch your <br />
                   clothing line <br />
                   <span className="italic text-accent-lime">today.</span>
@@ -71,24 +71,24 @@ export default function CTA() {
                   </div>
                   <a
                     href="mailto:hello@atelier09.co"
-                    className="mt-4 flex items-center gap-3 border-b border-bone-300/10 pb-4 text-bone-50 transition-colors hover:text-accent-lime"
+                    className="mt-4 flex items-start gap-3 border-b border-bone-300/10 pb-4 text-bone-50 transition-colors hover:text-accent-lime"
                   >
-                    <Mail className="h-5 w-5" strokeWidth={1.75} />
-                    <span className="font-display text-xl tracking-tight md:text-2xl">
+                    <Mail className="mt-1 h-5 w-5 shrink-0" strokeWidth={1.75} />
+                    <span className="font-display break-all text-base leading-tight tracking-tight sm:text-xl sm:break-normal md:text-2xl">
                       hello@atelier09.co
                     </span>
                   </a>
                   <a
                     href="tel:+919999999999"
-                    className="mt-4 flex items-center gap-3 text-bone-50 transition-colors hover:text-accent-lime"
+                    className="mt-4 flex items-start gap-3 text-bone-50 transition-colors hover:text-accent-lime"
                   >
-                    <Phone className="h-5 w-5" strokeWidth={1.75} />
-                    <span className="font-display text-xl tracking-tight md:text-2xl">
+                    <Phone className="mt-1 h-5 w-5 shrink-0" strokeWidth={1.75} />
+                    <span className="font-display text-base leading-tight tracking-tight sm:text-xl md:text-2xl">
                       +91 99999 99999
                     </span>
                   </a>
 
-                  <div className="mt-8 space-y-3 text-sm text-bone-300">
+                  <div className="mt-8 space-y-3 text-xs text-bone-300 sm:text-sm">
                     <div className="flex items-start justify-between gap-4 border-t border-bone-300/10 pt-4">
                       <span>MOQ</span>
                       <span className="text-bone-100">300 pcs / style</span>
