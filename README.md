@@ -85,8 +85,3 @@ All imagery comes from **Unsplash** (free license, direct CDN). URLs are in `src
 - **Copy** — everything editorial lives in `src/data/content.js`.
 - **Sections** — add/remove from the composition inside `src/App.jsx`.
 - **New section** — mirror the pattern: `Container + SectionLabel + Reveal + grid/cards`.
-
-## Branding
-
-- Template branding and attribution by Tronzlabs
-- Website: [tronzlabs.com](https://tronzlabs.com)

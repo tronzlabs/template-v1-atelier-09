@@ -8,7 +8,6 @@ import Factory from "./components/Factory";
 import Testimonials from "./components/Testimonials";
 import CTA from "./components/CTA";
 import Footer from "./components/Footer";
-import StartProjectOverlay from "./components/StartProjectOverlay";
 
 export default function App() {
   return (
@@ -25,7 +24,6 @@ export default function App() {
         <CTA />
       </main>
       <Footer />
-      <StartProjectOverlay />
     </div>
   );
 }
